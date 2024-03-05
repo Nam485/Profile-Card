@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE CARD</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .box::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36%;
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            background-color: #4070f4;
+        }
+        .image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #4070f4;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+        .image .profile-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        .box .data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .data .name{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        
+        .data .job{
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .box .media{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .media .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 0 8px;
+            background-color: #4070f4;
+            text-decoration: none;
+        }
+        .box .buttons{
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+        .buttons .button{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            border: none;
+            border-radius: 24px;
+            margin: 0 10px;
+            padding: 8px 24px;
+            background-color: #4070f4;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .buttons :hover{
+            background-color: #0e4bf1;
+        }
+        .box .analytics{
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+        .analytics .follow{
+            display: flex;
+            align-items: center;
+            color: #333;
+            padding: 0 20px;
+            border-right: 2px solid #e7e7e7;
+        }
+        .data i{
+            font-size: 18px;
+            margin-right: 6px;
+        }
+        .follow:last-child{
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+           <div class="image">
+            <img src="D:\VS Code\project\namit1.jpg" alt="" class="profile-img">
+           </div>
+           <div class="data">
+            <span class="name">Namit Goyal</span>
+            <span class="job">Web Developer and Graphic Designer</span>
+           </div>
+           <div class="media">
+            <a href="#" style ="background: #e1306c;" class="link">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" style ="background: #1da1f2;" class="link">
+                <i class='bx bxl-twitter' ></i>
+            </a>
+            <a href="#" style ="background: #4267b2;" class="link">
+                <i class='bx bxl-linkedin' ></i>
+            </a>
+           </div>
+           <div class="buttons">
+            <button class="button">Follow</button>
+            <button class="button">Message</button>
+           </div>
+           <div class="analytics">
+            <div class="follow">
+                <i class='bx bx-heart' ></i>
+                <span class="number">60k</span>
+            </div>
+            <div class="follow">
+                <i class='bx bx-message-rounded-dots'></i>
+                <span class="number">20k</span>
+            </div>
+            <div class="follow">
+                <i class='bx bx-share' ></i>
+                <span class="number">10k</span>
+            </div>
+           </div>
+    </div>
+</body>
+</html>
